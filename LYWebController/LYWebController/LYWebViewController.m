@@ -53,7 +53,18 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+//    将导航栏设置为不透明
+    self.navigationController.navigationBar.translucent = NO;
+//    显示出工具栏
+    [self.navigationController setToolbarHidden:NO];
+//    工具栏设置为不透明
+    self.navigationController.toolbar.translucent = NO;
+//    隐藏掉默认返回按钮
     [self.navigationItem setHidesBackButton:YES animated:NO];
+//    导航栏、工具栏按钮设置
+    [self setLeftBarButtonItemByRequest:NULL];
+    [self setRightBarButtonItem];
+    [self setBottomBarButtonItem];
 }
 #pragma mark VC setup
 - (void)setupViewSubs
@@ -68,8 +79,6 @@
 //    手动设置webview页码计数方式，默认为不计数
     myWebview.paginationMode = UIWebPaginationModeTopToBottom;
     self.webview = myWebview;
-    [self setLeftBarButtonItemByRequest:NULL];
-    [self setRightBarButtonItem];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,10 +101,29 @@
         self.navigationItem.leftBarButtonItems = @[self.backBtn,self.closeBtn];
     }
 }
-
+//导航栏右侧按钮的显示设置
 - (void)setRightBarButtonItem
 {
     self.navigationItem.rightBarButtonItem = self.rightBtn;
+}
+//底部工具栏按钮的显示设置
+- (void)setBottomBarButtonItem
+{
+    
+    UIView *rewardView = [LYIconfont getToolBarCustomViewWithCode:@"\U0000e855" Title:@"赞赏"];
+    UIView *commentView = [LYIconfont getToolBarCustomViewWithCode:@"\U0000e60e" Title:@"评论"];
+    UIView *likeView = [LYIconfont getToolBarCustomViewWithCode:@"\U0000e600" Title:@"喜欢"];
+    UIView *shareView = [LYIconfont getToolBarCustomViewWithCode:@"\U0000e6a3" Title:@"分享"];
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(commentBtnClicked)];
+    [commentView addGestureRecognizer:tapGestureRecognizer];
+    UIBarButtonItem *flexibleItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:NULL action:NULL];
+    UIBarButtonItem *fixedItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:NULL action:NULL];
+    fixedItem.width = 20.0;
+    UIBarButtonItem *rewardItem = [[UIBarButtonItem alloc] initWithCustomView:rewardView];
+    UIBarButtonItem *commentItem = [[UIBarButtonItem alloc] initWithCustomView:commentView];
+    UIBarButtonItem *likeItem = [[UIBarButtonItem alloc] initWithCustomView:likeView];
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithCustomView:shareView];
+    self.toolbarItems = @[fixedItem, rewardItem, flexibleItem, commentItem, flexibleItem, likeItem, flexibleItem, shareItem, fixedItem];
 }
 #pragma mark private methods
 //导航栏返回按钮点击事件
@@ -127,10 +155,15 @@
     self.navigationItem.leftBarButtonItems = @[self.backBtn];
     [self homePageTitleReset];
 }
-
+//右侧列表按钮点击事件
 - (void)rightBtnClicked
 {
-    
+//    这里写一个list控件
+}
+//底部工具栏评论按钮点击事件
+- (void)commentBtnClicked
+{
+    NSLog(@"i will scroll the page to comment field la!");
 }
 //首页title置空
 - (void)homePageTitleReset

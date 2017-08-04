@@ -15,4 +15,5 @@
 //获取一个label类型的iconfont图标，当设置的size超过frame时，取frame的长宽最小值
 + (UILabel *)LYIconfontLabelWithFrame:(CGRect)frame code:(NSString *)code color:(UIColor *)color size:(CGFloat)size;
 
++ (UIView *)getToolBarCustomViewWithCode:(NSString *)code Title:(NSString *)title;
 @end

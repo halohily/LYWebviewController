@@ -20,4 +20,8 @@
     return [self stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 
+- (void)scrollToCommentField
+{
+    [self stringByEvaluatingJavaScriptFromString:@""];
+}
 @end

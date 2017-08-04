@@ -10,6 +10,7 @@
 @interface UIWebView (Jianshu)
 //将此webview的UI设置为简书风格（和VC分离，此处可单独设置不同风格的UI）
 - (void)setupJianshuUI;
+//获取当前页面的title
 - (NSString *)getPageTitle;
-
+- (void)scrollToCommentField;
 @end

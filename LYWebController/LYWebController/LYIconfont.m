@@ -42,4 +42,17 @@
     return LYLabel;
 }
 
++ (UIView *)getToolBarCustomViewWithCode:(NSString *)code Title:(NSString *)title
+{
+    UILabel *customBtn = [LYIconfont LYIconfontLabelWithFrame:CGRectMake(0, 0, 20, 20) code:code color:NavGary size:18.0];
+    UILabel *customLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 22, 20, 8)];
+    customLabel.textColor = NavGary;
+    customLabel.textAlignment = NSTextAlignmentCenter;
+    customLabel.text = title;
+    customLabel.font = [UIFont systemFontOfSize:8.0];
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 30)];
+    [customView addSubview:customBtn];
+    [customView addSubview:customLabel];
+    return customView;
+}
 @end
