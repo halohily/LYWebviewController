@@ -22,6 +22,6 @@
 
 - (void)scrollToCommentField
 {
-    [self stringByEvaluatingJavaScriptFromString:@""];
+    [self stringByEvaluatingJavaScriptFromString:@"scrollTo(0,20500)"];
 }
 @end

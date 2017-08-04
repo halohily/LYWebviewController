@@ -12,5 +12,6 @@
 - (void)setupJianshuUI;
 //获取当前页面的title
 - (NSString *)getPageTitle;
+//页面滑动到评论区域
 - (void)scrollToCommentField;
 @end

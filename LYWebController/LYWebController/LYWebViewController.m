@@ -45,8 +45,7 @@
     [self setupViewSubs];
 //    [self.webview loadRequest:[NSURLRequest requestWithURL:self.URL]];
 //    因为模仿简书风格，所以url默认为简书的一篇文章。否则使用注释掉的上一句代码，使用vc初始化时的url
-    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.jianshu.com/p/a7b0d6c630d3"]]];
-//    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.jianshu.com/p/264961e62de7"]]];
 
     // Do any additional setup after loading the view.
 }
@@ -71,7 +70,7 @@
 {
 //    页面计数器初始化为1
     pages = 1;
-    UIWebView *myWebview = [[UIWebView alloc] initWithFrame:self.view.frame];
+    UIWebView *myWebview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 44)];
     [self.view addSubview:myWebview];
 //    设置webview的个性化UI
     [myWebview setupJianshuUI];
@@ -164,6 +163,7 @@
 - (void)commentBtnClicked
 {
     NSLog(@"i will scroll the page to comment field la!");
+    [self.webview scrollToCommentField];
 }
 //首页title置空
 - (void)homePageTitleReset
