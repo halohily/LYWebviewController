@@ -45,7 +45,7 @@
     [self setupViewSubs];
 //    [self.webview loadRequest:[NSURLRequest requestWithURL:self.URL]];
 //    因为模仿简书风格，所以url默认为简书的一篇文章。否则使用注释掉的上一句代码，使用vc初始化时的url
-    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.jianshu.com/p/264961e62de7"]]];
+    [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.jianshu.com/p/1bd426ad2f2b"]]];
 
     // Do any additional setup after loading the view.
 }
