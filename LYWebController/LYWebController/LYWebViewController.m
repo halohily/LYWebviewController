@@ -9,6 +9,8 @@
 #import "LYWebViewController.h"
 #import "UIWebView+Jianshu.h"
 #import "AvatorViewController.h"
+#import "LYIconfont.h"
+
 @interface LYWebViewController ()<UIWebViewDelegate>
 {
     NSUInteger pages;
@@ -143,11 +145,7 @@
     if (!_backBtn)
     {
         UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
-        UIButton *backBtn = [[UIButton alloc] initWithFrame:backView.frame];
-        [backBtn setTitle:@"\U0000e720" forState:UIControlStateNormal];
-        backBtn.titleLabel.font = [UIFont fontWithName:@"iconfont" size:28.0];
-        backBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        [backBtn setTitleColor:NavGary forState:UIControlStateNormal];
+        UIButton *backBtn = [LYIconfont LYIconfontButtonWithFrame:backView.frame code:@"\U0000e720" color:NavGary size:28.0];
         [backBtn addTarget:self action:@selector(backBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [backView addSubview:backBtn];
         UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithCustomView:backView];
@@ -161,11 +159,7 @@
     if (!_closeBtn)
     {
         UIView *closeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
-        UIButton *closeBtn = [[UIButton alloc] initWithFrame:closeView.frame];
-        [closeBtn setTitle:@"\U0000e6e9" forState:UIControlStateNormal];
-        [closeBtn setTitleColor:NavGary forState:UIControlStateNormal];
-        closeBtn.titleLabel.font = [UIFont fontWithName:@"iconfont" size:25.0];
-        closeBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        UIButton *closeBtn = [LYIconfont LYIconfontButtonWithFrame:closeView.frame code:@"\U0000e6e9" color:NavGary size:25.0];
         [closeBtn addTarget:self action:@selector(closeBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [closeView addSubview:closeBtn];
         UIBarButtonItem *close = [[UIBarButtonItem alloc] initWithCustomView:closeView];
@@ -179,11 +173,7 @@
     if (!_rightBtn)
     {
         UIView *rightView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
-        UIButton *rightBtn = [[UIButton alloc] initWithFrame:rightView.frame];
-        [rightBtn setTitle:@"\U0000e8c4" forState:UIControlStateNormal];
-        [rightBtn setTitleColor:NavGary forState:UIControlStateNormal];
-        rightBtn.titleLabel.font = [UIFont fontWithName:@"iconfont" size:25.0];
-        rightBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        UIButton *rightBtn = [LYIconfont LYIconfontButtonWithFrame:rightView.frame code:@"\U0000e8c4" color:NavGary size:28.0];
         [rightBtn addTarget:self action:@selector(rightBtnClicked) forControlEvents:UIControlEventTouchUpInside];
         [rightView addSubview:rightBtn];
         UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:rightView];

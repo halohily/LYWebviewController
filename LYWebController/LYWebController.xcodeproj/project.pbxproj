@@ -15,6 +15,7 @@
 		0811BB341F331F51000FEBB7 /* UIWebView+Jianshu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811BB331F331F51000FEBB7 /* UIWebView+Jianshu.m */; };
 		0811BB3A1F333E97000FEBB7 /* AvatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811BB391F333E97000FEBB7 /* AvatorViewController.m */; };
 		0811BB3C1F34737B000FEBB7 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0811BB3B1F34734C000FEBB7 /* iconfont.ttf */; };
+		0811BB811F3488AD000FEBB7 /* LYIconfont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811BB801F3488AD000FEBB7 /* LYIconfont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +50,12 @@
 		0811BB301F331EE5000FEBB7 /* LYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWebViewController.m; sourceTree = "<group>"; };
 		0811BB321F331F51000FEBB7 /* UIWebView+Jianshu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Jianshu.h"; sourceTree = "<group>"; };
 		0811BB331F331F51000FEBB7 /* UIWebView+Jianshu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Jianshu.m"; sourceTree = "<group>"; };
-		0811BB361F332E5E000FEBB7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		0811BB381F333E97000FEBB7 /* AvatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatorViewController.h; sourceTree = "<group>"; };
 		0811BB391F333E97000FEBB7 /* AvatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatorViewController.m; sourceTree = "<group>"; };
 		0811BB3B1F34734C000FEBB7 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		0811BB7F1F3488AD000FEBB7 /* LYIconfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYIconfont.h; sourceTree = "<group>"; };
+		0811BB801F3488AD000FEBB7 /* LYIconfont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYIconfont.m; sourceTree = "<group>"; };
+		0811BB821F3490CA000FEBB7 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		0811BAFB1F331E9A000FEBB7 /* LYWebController */ = {
 			isa = PBXGroup;
 			children = (
+				0811BB7F1F3488AD000FEBB7 /* LYIconfont.h */,
+				0811BB801F3488AD000FEBB7 /* LYIconfont.m */,
 				0811BAFF1F331E9B000FEBB7 /* AppDelegate.h */,
 				0811BB001F331E9B000FEBB7 /* AppDelegate.m */,
 				0811BB021F331E9B000FEBB7 /* ViewController.h */,
@@ -121,8 +126,8 @@
 		0811BAFC1F331E9A000FEBB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0811BB821F3490CA000FEBB7 /* PrefixHeader.pch */,
 				0811BB3B1F34734C000FEBB7 /* iconfont.ttf */,
-				0811BB361F332E5E000FEBB7 /* PrefixHeader.pch */,
 				0811BAFD1F331E9A000FEBB7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0811BB811F3488AD000FEBB7 /* LYIconfont.m in Sources */,
 				0811BB041F331E9B000FEBB7 /* ViewController.m in Sources */,
 				0811BB011F331E9B000FEBB7 /* AppDelegate.m in Sources */,
 				0811BB311F331EE5000FEBB7 /* LYWebViewController.m in Sources */,
@@ -400,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2GC55R3DL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LYWebController/PrefixHeader.pch";
 				INFOPLIST_FILE = LYWebController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = halohily.LYWebController;
@@ -414,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2GC55R3DL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LYWebController/PrefixHeader.pch";
 				INFOPLIST_FILE = LYWebController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = halohily.LYWebController;
