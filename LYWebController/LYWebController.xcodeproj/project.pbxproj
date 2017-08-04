@@ -13,8 +13,8 @@
 		0811BB091F331E9B000FEBB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0811BB081F331E9B000FEBB7 /* Assets.xcassets */; };
 		0811BB311F331EE5000FEBB7 /* LYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811BB301F331EE5000FEBB7 /* LYWebViewController.m */; };
 		0811BB341F331F51000FEBB7 /* UIWebView+Jianshu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811BB331F331F51000FEBB7 /* UIWebView+Jianshu.m */; };
-		0811BB371F3333EF000FEBB7 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0811BB351F3329BF000FEBB7 /* iconfont.ttf */; };
 		0811BB3A1F333E97000FEBB7 /* AvatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0811BB391F333E97000FEBB7 /* AvatorViewController.m */; };
+		0811BB3C1F34737B000FEBB7 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0811BB3B1F34734C000FEBB7 /* iconfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +49,10 @@
 		0811BB301F331EE5000FEBB7 /* LYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYWebViewController.m; sourceTree = "<group>"; };
 		0811BB321F331F51000FEBB7 /* UIWebView+Jianshu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Jianshu.h"; sourceTree = "<group>"; };
 		0811BB331F331F51000FEBB7 /* UIWebView+Jianshu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Jianshu.m"; sourceTree = "<group>"; };
-		0811BB351F3329BF000FEBB7 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		0811BB361F332E5E000FEBB7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 		0811BB381F333E97000FEBB7 /* AvatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatorViewController.h; sourceTree = "<group>"; };
 		0811BB391F333E97000FEBB7 /* AvatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatorViewController.m; sourceTree = "<group>"; };
+		0811BB3B1F34734C000FEBB7 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,8 @@
 		0811BAFC1F331E9A000FEBB7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0811BB3B1F34734C000FEBB7 /* iconfont.ttf */,
 				0811BB361F332E5E000FEBB7 /* PrefixHeader.pch */,
-				0811BB351F3329BF000FEBB7 /* iconfont.ttf */,
 				0811BAFD1F331E9A000FEBB7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0811BB371F3333EF000FEBB7 /* iconfont.ttf in Resources */,
+				0811BB3C1F34737B000FEBB7 /* iconfont.ttf in Resources */,
 				0811BB091F331E9B000FEBB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +491,7 @@
 				0811BB281F331E9B000FEBB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0811BB291F331E9B000FEBB7 /* Build configuration list for PBXNativeTarget "LYWebControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				0811BB2B1F331E9B000FEBB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0811BB2C1F331E9B000FEBB7 /* Build configuration list for PBXNativeTarget "LYWebControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +509,7 @@
 				0811BB2E1F331E9B000FEBB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

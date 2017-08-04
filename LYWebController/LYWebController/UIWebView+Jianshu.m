@@ -14,4 +14,10 @@
 {
     self.backgroundColor = [UIColor whiteColor];
 }
+
+- (NSString *)getPageTitle
+{
+    return [self stringByEvaluatingJavaScriptFromString:@"document.title"];
+}
+
 @end
