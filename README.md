@@ -1,6 +1,8 @@
 # 基于UIWebview的简书文章阅读页面的模仿demo
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/halohily/LYWebviewController) [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]([![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)]([![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/halohily/LYWebviewController))
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/halohily/LYWebviewController) 
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]([![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/halohily/LYWebviewController)
 
 [简书](www.jianshu.com) iOS客户端有许多有趣的特性，如果它们使用`hybrid`开发模式该如何实现呢？
 
